@@ -1,8 +1,17 @@
-import profileImage from "@/contents/bio/profilepic.png";
+"use server";
+
+import profileImage from "@/contents/profile/profilepic.png";
+import { getLocaleContent } from "@/utils";
 import { Box, Image } from "@mantine/core";
 import NextImage from "next/image";
 
-export default function Profile() {
+interface ProfileProps {
+  locale: Locale;
+}
+
+export default async function Profile({ locale }: ProfileProps) {
+  const profile = await getLocaleContent(locale, "contents/profile");
+
   return (
     <Box>
       <Box
@@ -18,6 +27,8 @@ export default function Profile() {
           placeholder="blur"
         />
       </Box>
+      {profile.name}
+      {profile.description}
     </Box>
   );
 }

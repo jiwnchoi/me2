@@ -1,8 +1,8 @@
 interface ContentTypes {
-  'contents/bio': ContentsBio;
+  'contents/profile': ContentsProfile;
 }
 
-interface ContentsBio {
+interface ContentsProfile {
   'name': string[];
   'description': string[];
   'email': string;
