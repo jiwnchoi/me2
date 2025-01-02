@@ -1,17 +1,22 @@
-import { getDictionary } from "@/get-locale";
-import type { Locale } from "@/i18n-config";
+import { Profile } from "@/components";
 
-export default async function IndexPage(props: { params: Promise<{ lang: Locale }> }) {
+import { getLocale } from "@/utils";
+
+import { Container, Flex } from "@mantine/core";
+
+export default async function IndexPage(props: PropsWithLocale<object>) {
   const { lang } = await props.params;
 
-  const dictionary = await getDictionary(lang);
+  const dictionary = await getLocale(lang);
 
   return (
-    <div>
-      <div>
-        <p>Current locale: {lang}</p>
-        <p>This text is rendered on the server: {dictionary["welcome"]}</p>
-      </div>
-    </div>
+    <Container size={"xl"} p={"sm"}>
+      {/* Side Navigation */}
+      <Flex w={300}>
+        <Profile />
+      </Flex>
+      {/* Main Content */}
+      <Flex flex={1}>{dictionary.welcome}</Flex>
+    </Container>
   );
 }
