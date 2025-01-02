@@ -1,5 +1,3 @@
-"use server";
-
 import profileImage from "@/contents/profile/profilepic.png";
 import { getLocaleContent } from "@/utils";
 import { Box, Image } from "@mantine/core";
