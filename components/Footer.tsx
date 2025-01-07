@@ -1,5 +1,6 @@
 "use client";
 
+import { i18n } from "@/i18n-config";
 import { subText } from "@/styles/defined.css";
 import { Button, Center, Flex, Select, Text, useMantineColorScheme } from "@mantine/core";
 import { useRouter } from "next/navigation";
@@ -21,10 +22,7 @@ export default function Footer({ locale }: { locale: Locale }) {
           onChange={(value) => {
             if (value) push(`/${value}`);
           }}
-          data={[
-            { value: "en", label: "English" },
-            { value: "ko", label: "한국어" },
-          ]}
+          data={i18n.locales.map((locale) => ({ value: locale, label: i18n.localeNames[locale] }))}
         />
         <Button
           variant="transparent"

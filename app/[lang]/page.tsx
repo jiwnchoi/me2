@@ -29,38 +29,38 @@ export default async function IndexPage(props: PropsWithLocale<never>) {
 const contents = [
   {
     key: "about",
-    content: await import("@/sections/about").then((mod) => mod.default),
+    content: await import("@/contents/sections/about").then((mod) => mod.default),
   },
   {
     key: "news",
-    content: await import("@/sections/news").then((mod) => mod.default),
+    content: await import("@/contents/sections/news").then((mod) => mod.default),
   },
   {
     key: "prj",
-    content: await import("@/sections/prj").then((mod) => mod.default),
+    content: await import("@/contents/sections/prj").then((mod) => mod.default),
   },
   {
     key: "edu",
-    content: await import("@/sections/edu").then((mod) => mod.default),
+    content: await import("@/contents/sections/edu").then((mod) => mod.default),
   },
   {
     key: "exp",
-    content: await import("@/sections/exp").then((mod) => mod.default),
+    content: await import("@/contents/sections/exp").then((mod) => mod.default),
   },
   {
     key: "projects",
-    content: await import("@/sections/prj").then((mod) => mod.default),
+    content: await import("@/contents/sections/prj").then((mod) => mod.default),
   },
   {
     key: "projects",
-    content: await import("@/sections/prj").then((mod) => mod.default),
+    content: await import("@/contents/sections/prj").then((mod) => mod.default),
   },
   {
     key: "publications",
-    content: await import("@/sections/pub").then((mod) => mod.default),
+    content: await import("@/contents/sections/pub").then((mod) => mod.default),
   },
   {
     key: "honors",
-    content: await import("@/sections/hnr").then((mod) => mod.default),
+    content: await import("@/contents/sections/hnr").then((mod) => mod.default),
   },
 ];
