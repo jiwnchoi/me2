@@ -3,24 +3,10 @@ import type { MDXComponents } from "mdx/types";
 import Link from "next/link";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
-  // const theme = useMantineTheme();
-
   return {
-    h1: ({ children }) => (
-      <Title order={1} my="md">
-        {children}
-      </Title>
-    ),
-    h2: ({ children }) => (
-      <Title order={2} my="md">
-        {children}
-      </Title>
-    ),
-    h3: ({ children }) => (
-      <Title order={3} my="md">
-        {children}
-      </Title>
-    ),
+    h1: ({ children }) => <Title order={1}>{children}</Title>,
+    h2: ({ children }) => <Title order={2}>{children}</Title>,
+    h3: ({ children }) => <Title order={3}>{children}</Title>,
     p: ({ children }) => (
       <Text size="md" lh={1.5}>
         {children}
@@ -52,7 +38,18 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         </Text>
       </List.Item>
     ),
-    blockquote: ({ children }) => <Box component="blockquote">{children}</Box>,
+    blockquote: ({ children }) => (
+      <Box
+        component="blockquote"
+        p={"md"}
+        m={0}
+        style={(theme) => ({
+          border: `4px solid ${theme.colors[theme.primaryColor][6]}`,
+          borderRadius: theme.radius.md,
+        })}>
+        {children}
+      </Box>
+    ),
     ...components,
   };
 }
