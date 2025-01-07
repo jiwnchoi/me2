@@ -2,7 +2,7 @@ import { vars } from "@/styles/theme.css";
 import { style } from "@vanilla-extract/css";
 
 export const SectionStyle = style({
-  borderRadius: vars.radius.sm,
+  borderRadius: vars.radius.md,
   display: "flex",
   flexDirection: "column",
 
@@ -28,4 +28,19 @@ export const SectionStyle = style({
 export const emText = style({
   fontWeight: 700,
   fontSize: vars.fontSizes.xl,
+});
+
+export const subText = style({
+  fontWeight: 400,
+  fontSize: vars.fontSizes.xs,
+
+  selectors: {
+    [vars.lightSelector]: {
+      color: vars.colors.gray[7],
+    },
+
+    [vars.darkSelector]: {
+      color: vars.colors.gray[3],
+    },
+  },
 });

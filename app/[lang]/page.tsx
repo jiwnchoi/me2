@@ -1,21 +1,25 @@
 import { Container, Flex } from "@mantine/core";
 
-import { Profile } from "@/components";
-import { getLocale } from "@/utils";
+import { Footer, Navigations, Profile } from "@/components";
 
 export default async function IndexPage(props: PropsWithLocale<never>) {
   const { lang } = await props.params;
 
-  const dictionary = await getLocale(lang);
+  // const dictionary = await getLocale(lang);
 
   return (
-    <Container size={"xl"} p={"sm"}>
+    <Container size={"xl"} p={"xl"}>
       {/* Side Navigation */}
-      <Flex w={240}>
-        <Profile locale={lang} />
+      <Flex w="100%">
+        <Flex w={240} direction={"column"} gap={"md"}>
+          <Profile locale={lang} />
+          <Navigations locale={lang} />
+        </Flex>
+        {/* Main Content */}
+        <Flex flex={1}>{123}</Flex>
       </Flex>
-      {/* Main Content */}
-      <Flex flex={1}>{dictionary.welcome}</Flex>
+      {/* Footer */}
+      <Footer locale={lang} />
     </Container>
   );
 }

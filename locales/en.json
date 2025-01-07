@@ -1,3 +1,8 @@
 {
-  "welcome": "Welcome to the app2"
+  "nav.about": "About",
+  "nav.exp": "Experiences",
+  "nav.proj": "Projects",
+  "nav.edu": "Educations",
+  "nav.pub": "Publications",
+  "nav.hnr": "Honors"
 }
