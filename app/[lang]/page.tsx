@@ -11,7 +11,7 @@ export default async function IndexPage(props: PropsWithLocale<never>) {
   return (
     <Container size={"xl"} p={"sm"}>
       {/* Side Navigation */}
-      <Flex w={300}>
+      <Flex w={240}>
         <Profile locale={lang} />
       </Flex>
       {/* Main Content */}

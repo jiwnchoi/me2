@@ -2,7 +2,7 @@ import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from "@mantine/c
 import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 
-import { theme } from "@/theme";
+import { theme } from "@/styles/theme";
 import "@mantine/core/styles.css";
 import "./global.css";
 
