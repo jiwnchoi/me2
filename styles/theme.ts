@@ -6,7 +6,7 @@ export const theme = mergeThemeOverrides(
   DEFAULT_THEME,
   createTheme({
     autoContrast: true,
-    primaryColor: "gray",
-    defaultRadius: "sm",
+    primaryColor: "orange",
+    defaultRadius: "md",
   }),
 );

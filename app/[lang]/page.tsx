@@ -1,6 +1,7 @@
 import { Container, Flex } from "@mantine/core";
 
 import { Content, Footer, Navigations, Profile } from "@/components";
+import { SectionStyle } from "@/styles/defined.css";
 
 export default async function IndexPage(props: PropsWithLocale<never>) {
   const { lang } = await props.params;
@@ -14,9 +15,9 @@ export default async function IndexPage(props: PropsWithLocale<never>) {
           <Navigations locale={lang} />
         </Flex>
         {/* Main Content */}
-        <Flex w="100%" direction={"column"} gap={"md"}>
+        <Flex className={SectionStyle} align={"flex-start"} p={"lg"} gap={"lg"}>
           {contents.map(({ key, content }) => (
-            <Content key={key} content={content} locale={lang} />
+            <Content key={`content-${key}`} content={content} locale={lang} />
           ))}
         </Flex>
       </Flex>
@@ -48,19 +49,11 @@ const contents = [
     content: await import("@/contents/sections/exp").then((mod) => mod.default),
   },
   {
-    key: "projects",
-    content: await import("@/contents/sections/prj").then((mod) => mod.default),
-  },
-  {
-    key: "projects",
-    content: await import("@/contents/sections/prj").then((mod) => mod.default),
-  },
-  {
-    key: "publications",
+    key: "pub",
     content: await import("@/contents/sections/pub").then((mod) => mod.default),
   },
   {
-    key: "honors",
+    key: "hnr",
     content: await import("@/contents/sections/hnr").then((mod) => mod.default),
   },
 ];

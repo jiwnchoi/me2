@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "schema-generator.js", "**/*.d.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "schema-generator.js", "**/*.d.ts", "contents/sections/news/en.mdx", "contents/sections/news/ko.mdx"],
   "exclude": ["node_modules"],
 }
