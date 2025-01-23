@@ -1,4 +1,3 @@
-import profileImage from "@/contents/profile/profilepic.png";
 import { emText, SectionStyle } from "@/styles/defined.css";
 
 import { getLocaleContent } from "@/utils";
@@ -29,11 +28,10 @@ export default async function Profile({ locale }: ProfileProps) {
         h={{ base: 100, md: 120 }}>
         <Image
           component={NextImage}
-          src={profileImage}
+          src={"/assets/profile/profilepic.png"}
           alt="Profile Picture"
           width={120}
           height={120}
-          placeholder="blur"
         />
       </Box>
       <Flex mb={"sm"} direction="column" align="center">

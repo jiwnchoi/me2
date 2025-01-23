@@ -1,0 +1,47 @@
+[
+  {
+    "title": "NAVER Cloud",
+    "role": "Research Engineer Intern (HyperCLOVA X Vision)",
+    "location": "Seongnam, South Korea",
+    "date": "Feb. 2025 - Present",
+    "description": "Researching on several topics for Large-Scale Vision-Language Model",
+    "url": "https://www.navercloudcorp.com",
+    "image": "/assets/exps/navercloud.jpg"
+  },
+  {
+    "title": "Sungkyunkwan University",
+    "role": "Research Assistant, Interactive Data Computing Lab",
+    "location": "Suwon, South Korea",
+    "date": "May. 2021 - Present",
+    "description": "Researching on the topic of automated data analysis.",
+    "url": "https://idclab.skku.edu",
+    "image": "/assets/exps/skku.png"
+  },
+  {
+    "title": "NAVER Corporation",
+    "role": "Software Engineer Intern",
+    "location": "Seongnam, South Korea",
+    "date": "Jan. 2024 - Feb. 2024",
+    "description": "Designed and developed automated web color palette recommendation and assignment module for internal product of NAVER Corp.",
+    "url": "https://www.navercorp.com",
+    "image": "/assets/exps/naver.svg"
+  },
+  {
+    "title": "Sungkyunkwan University",
+    "role": "Teaching Assistant, Dept. of Computer Science and Engineering",
+    "location": "Suwon, South Korea",
+    "date": "Sep. 2022 - Dec. 2023",
+    "description": "Introduction to HCI (2022 Fall, 2023 Falll), Open Source Software Practive (2022 Fall), Information Visualization (2023 Spring), Data Structures (2024 Spring)",
+    "url": "https://cse.skku.edu",
+    "image": "/assets/exps/skku.png"
+  },
+  {
+    "title": "Sungkyunkwan University",
+    "role": "Lecturer, Dept. of Applied AI",
+    "location": "Seoul, South Korea",
+    "date": "Aug. 2023",
+    "description": "Lectured on the topic of web development and open-source software.",
+    "url": "https://aai.skku.edu",
+    "image": "/assets/exps/skku.png"
+  }
+]

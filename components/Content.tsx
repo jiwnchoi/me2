@@ -11,7 +11,7 @@ export default function Content(props: ContentProps) {
   const { locale, content } = props;
   const Content = content[locale] ?? content.en;
   return (
-    <Box w="full" p={0} ref={content.contentRef}>
+    <Box w="100%" p={0} ref={content.contentRef}>
       <Content />
     </Box>
   );

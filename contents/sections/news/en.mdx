@@ -1,37 +1,11 @@
 import { SimpleItem } from "@/components/Item";
 import { List } from "@mantine/core";
-
-export const en = [
-  {
-    date: "Oct. 2023",
-    description: `I’m attending VIS 2024 (Tampa, FL) in person to present my paper "Bavisitter"!, See you there!`,
-  },
-  {
-    date: "Jun. 2024",
-    description: `"Bavisitter" has been accepted to IEEE VIS 2024! See you in Tampa!`,
-  },
-  {
-    date: "Jan. 2024",
-    description: `🏆 Honored to receive an outstanding TA award!`,
-  },
-  {
-    date: "Jan. 2024",
-    description: `Excited to start a software engineer internship at NAVER Corp!`,
-  },
-  {
-    date: "Oct. 2023",
-    description: `I'm attending VIS 2023 (Melbourne, Austrailia) in person!`,
-  },
-  {
-    date: "Jun. 2023",
-    description: `I’m attending EuroVis 2023 (Leipzig, Germany) in person to preseny my poster “Multi-Criteria Optimization for Automatic Dashboard Design`,
-  },
-];
+import content from "./en.json";
 
 ### News
 
 <List>
-  {en.map((item, index) => (
+  {content.map((item, index) => (
     <SimpleItem key={index} date={item.date} content={item.description} />
   ))}
 </List>

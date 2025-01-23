@@ -1,0 +1,47 @@
+[
+  {
+    "title": "네이버 클라우드",
+    "role": "리서치 엔지니어 인턴 (HyperCLOVA X Vision)",
+    "location": "성남, 대한민국",
+    "date": "2024년 2월 - 현재",
+    "description": "Vision-Language Model 관련 리서치 수행",
+    "url": "https://www.navercloudcorp.com",
+    "image": "/assets/exps/navercloud.jpg"
+  },
+  {
+    "title": "성균관대학교",
+    "role": "연구원, 인터랙티브 데이터 컴퓨팅 연구실 (IDCLab)",
+    "location": "수원, 대한민국",
+    "date": "2021년 5월 - 2025년 1월",
+    "description": "자동 데이터 분석에 관한 연구 수행",
+    "url": "https://idclab.skku.edu",
+    "image": "/assets/exps/skku.png"
+  },
+  {
+    "title": "네이버",
+    "role": "소프트웨어 엔지니어 인턴 (nBilly @ ETECH Smart Studio)",
+    "location": "성남, 대한민국",
+    "date": "2024년 1월 - 2024년 2월",
+    "description": "딥러닝 및 강화학습 기반 웹 페이지 색상 추천 및 할당 모듈 개발",
+    "url": "https://www.navercorp.com",
+    "image": "/assets/exps/naver.svg"
+  },
+  {
+    "title": "성균관대학교",
+    "role": "조교, 소프트웨어학과",
+    "location": "수원, 대한민국",
+    "date": "2022년 9월 - 2023년 12월",
+    "description": "HCI 개론 (2022 가을, 2023 가을), 오픈소스 소프트웨어 실습 (2022 가을), 정보 시각화 (2023 봄), 자료구조개론 (2024 봄)",
+    "url": "https://cse.skku.edu",
+    "image": "/assets/exps/skku.png"
+  },
+  {
+    "title": "성균관대학교",
+    "role": "초빙 강사, 인공지능융합학과",
+    "location": "서울, 대한민국",
+    "date": "2023년 8월",
+    "description": "웹 개발 및 오픈소스 소프트웨어 강의",
+    "url": "https://aai.skku.edu",
+    "image": "/assets/exps/skku.png"
+  }
+]
