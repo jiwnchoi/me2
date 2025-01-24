@@ -1,1 +1,22 @@
-안녕 세상아!
+import { Item } from "@/components/Item";
+import { List } from "@mantine/core";
+import content from "./ko.json";
+
+## Educations
+
+<List w={"100%"}>
+  {content.map((item, index) => {
+    return (
+      <Item
+        key={`experiences-${index}`}
+        title={item.title}
+        subtitle={item.role}
+        date={item.date}
+        location={item.location}
+        description={item.description}
+        href={item.url}
+        image={item.image}
+      />
+    );
+  })}
+</List>

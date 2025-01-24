@@ -26,8 +26,8 @@ export const SectionStyle = style({
 });
 
 export const emText = style({
-  fontWeight: 700,
-  fontSize: vars.fontSizes.xl,
+  fontWeight: 600,
+  fontSize: vars.fontSizes.lg,
 });
 
 export const subText = style({

@@ -1,0 +1,28 @@
+[
+  {
+    "title": "성균관대학교",
+    "role": "소프트웨어학과 공학석사",
+    "location": "수원, 대한민국",
+    "date": "2023년 9월 - 2025년 2월",
+    "description": "학점: 4.31/4.5",
+    "url": "https://cse.skku.edu",
+    "image": "/assets/exps/skku.png"
+  },
+  {
+    "title": "성균관대학교",
+    "role": "컴퓨터교육과 이학사",
+    "location": "서울, 대한민국",
+    "date": "2019년 3월 - 2023년 8월",
+    "description": "학점: 3.89/4.5",
+    "url": "https://comedu.skku.edu",
+    "image": "/assets/exps/skku.png"
+  },
+  {
+    "title": "경기고등학교",
+    "role": "졸업",
+    "location": "서울, 대한민국",
+    "date": "2015년 3월 - 2018년 2월",
+    "url": "https://kyunggi.sen.hs.kr",
+    "image": "/assets/exps/skku.png"
+  }
+]

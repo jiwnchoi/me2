@@ -1,5 +1,9 @@
 [
   {
+    "date": "Feb. 2025",
+    "description": "Excited to start a research engineer internship for Large Vision-Language Model (LVLM) at Naver Cloud!"
+  },
+  {
     "date": "Oct. 2023",
     "description": "I’m attending VIS 2024 (Tampa, FL) in person to present my paper \"Bavisitter\"!, See you there!"
   },
@@ -14,13 +18,5 @@
   {
     "date": "Jan. 2024",
     "description": "Excited to start a software engineer internship at NAVER Corp!"
-  },
-  {
-    "date": "Oct. 2023",
-    "description": "I'm attending VIS 2023 (Melbourne, Austrailia) in person!"
-  },
-  {
-    "date": "Jun. 2023",
-    "description": "I’m attending EuroVis 2023 (Leipzig, Germany) in person to preseny my poster “Multi-Criteria Optimization for Automatic Dashboard Design"
   }
 ]

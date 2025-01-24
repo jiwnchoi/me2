@@ -1,1 +1,28 @@
-Hello World!
+import { PubItem } from "@/components/Item";
+import { List, Flex } from "@mantine/core";
+import content from "./en.json";
+
+## Publications
+
+<Flex component={List} w={"100%"} direction="column" gap={8}>
+  {content.map((item, index) => {
+    return (
+      <PubItem
+        key={`pubs-${index}`}
+        title={item.title}
+        authorNames={item.authorNames}
+        date={item.date}
+        location={item.location}
+        description={item.description}
+        href={item.url}
+        pub={{
+          pdfLink: "pdfLink" in item ? item.pdfLink : "",
+          githubLink: "githubLink" in item ? item.githubLink : "",
+          webDemoLink: "webDemoLink" in item ? item.webDemoLink : "",
+          videoDemoLink: "videoDemoLink" in item ? item.videoDemoLink : "",
+          talkLink: "talkLink" in item ? item.talkLink : "",
+        }}
+      />
+    );
+  })}
+</Flex>

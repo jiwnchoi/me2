@@ -10,7 +10,7 @@ export default async function IndexPage(props: PropsWithLocale<never>) {
     <Container size={"xl"} p={"xl"}>
       {/* Side Navigation */}
       <Flex w="100%" gap={"xl"}>
-        <Flex w={240} direction={"column"} gap={"md"}>
+        <Flex w={240} direction={"column"} gap={"md"} h="100%" pos={"sticky"} top={32}>
           <Profile locale={lang} />
           <Navigations locale={lang} />
         </Flex>
