@@ -8,7 +8,7 @@
       "Seojin Kim",
       "Jaemin Jo"
     ],
-    "venue": [
+    "venues": [
       "Preprint (Under-review)"
     ],
     "githubLink": "https://github.com/jiwnchoi/swipytics",
@@ -22,7 +22,7 @@
       "Jiwon Choi",
       "Jaemin Jo"
     ],
-    "venue": [
+    "venues": [
       "Conditionally accepted to IEEE Pacific Visualization Conference 2025, Taipei, Taiwan"
     ],
     "githubLink": "https://github.com/jiwnchoi/waltzboard"
@@ -35,7 +35,7 @@
       "Jaeung Lee",
       "Jaemin Jo"
     ],
-    "venue": [
+    "venues": [
       "Proceedings of Conference on 2024 IEEE Visualization & Visual Analytics (IEEE VIS), Tampa Bay, USA"
     ],
     "githubLink": "https://github.com/jiwnchoi/bavisitter",
@@ -51,7 +51,7 @@
       "Jiwon Choi",
       "Jaemin Jo"
     ],
-    "venue": [
+    "venues": [
       "Proceedings of Conference on 2023 IEEE Visualization & Visual Analytics (IEEE VIS), Melbourn, Australia"
     ],
     "githubLink": "https://github.com/jjmmwon/ProjectionEnsemble",
@@ -66,7 +66,7 @@
       "Jiwon Choi",
       "Jaemin Jo"
     ],
-    "venue": [
+    "venues": [
       "Proceedings of 2023 Eurographics Conference on Visualization (EuroVis, Poster), Leipzig, Germany",
       "Invited to IEEE Pacific Visualization Symposium 2023, Seoul, Korea"
     ],
@@ -80,7 +80,7 @@
       "Jiwon Choi",
       "Jaemin Jo"
     ],
-    "venue": [
+    "venues": [
       "Proceedings of Conference on 2022 IEEE Visualization & Visual Analytics (IEEE VIS), Oklahoma City, USA"
     ],
     "pdfLink": "https://github.com/jiwnchoi/Intentable/files/9109841/Intentable_A.Mixed-Initiative.System.for.Intent-Based.Chart.Captioning.pdf",
@@ -96,7 +96,7 @@
       "Gwon Hong",
       "Jaemin Jo"
     ],
-    "venue": [
+    "venues": [
       "Proceedings of HCI KOREA 2022, Seoul, Korea"
     ],
     "pdfLink": "https://github.com/jason-choi-SKKU/VANAS/files/7750682/VANAS.pdf",

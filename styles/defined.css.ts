@@ -25,12 +25,18 @@ export const SectionStyle = style({
   },
 });
 
-export const emText = style({
+export const textEm = style({
   fontWeight: 600,
   fontSize: vars.fontSizes.lg,
 });
 
-export const subText = style({
+export const textSub = style({
+  fontWeight: 500,
+  fontSize: vars.fontSizes.sm,
+color: vars.colors.gray[6],
+});
+
+export const textFooter = style({
   fontWeight: 400,
   fontSize: vars.fontSizes.xs,
 

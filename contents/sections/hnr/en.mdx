@@ -8,14 +8,12 @@ import content from "./en.json";
   {content.map((item, index) => {
     return (
       <Item
-        key={`experiences-${index}`}
+        key={`hnrs-item-${index}`}
         title={item.title}
-        subtitle={item.role}
         date={item.date}
         location={item.location}
         description={item.description}
-        href={item.url}
-        image={item.image}
+        // href={item.url}
       />
     );
   })}

@@ -1,4 +1,4 @@
-import { emText } from "@/styles/defined.css";
+import { textEm, textSub } from "@/styles/defined.css";
 import { Anchor, Center, Flex, Highlight, Text } from "@mantine/core";
 import { default as Link, default as NextLink } from "next/link";
 import { Fragment } from "react";
@@ -18,19 +18,23 @@ interface PubItemProps {
   authorNames: string[];
   href?: string;
   pub: PubLinks;
+  venues: string[];
 }
 
-export default function PubItem({ title, authorNames, pub }: PubItemProps) {
+export default function PubItem({ title, authorNames, pub, venues }: PubItemProps) {
   return (
-    <Flex w={"100%"} direction="column">
-      <Flex direction="column">
-        <Text component="p" className={emText}>
-          {title}
+    <Flex w={"100%"} direction="column" gap={1}>
+      <Text component="p" className={textEm}>
+        {title}
+      </Text>
+      <Text component="p">
+        <PubAuthors authorNames={authorNames} />
+      </Text>
+      {venues.map((venue, index) => (
+        <Text key={`${title}-venue${index}`} component="p" className={textSub}>
+          {venue}
         </Text>
-        <Text component="p">
-          <PubAuthors authorNames={authorNames} />
-        </Text>
-      </Flex>
+      ))}
 
       <PubLinks pub={pub} />
     </Flex>
@@ -41,18 +45,12 @@ function PubAuthors({ authorNames }: { authorNames: string[] }) {
   return authorNames.map((author, index) => (
     <Fragment key={`authorNames${index}`}>
       <Anchor component={Link} href={authors.find((a) => a.name === author)?.url ?? ""}>
-        <Highlight
-          component="span"
-          highlight={["Jiwon Choi"]}
-          highlightStyles={{
-            backgroundColor: "none",
-            textDecoration: "underline",
-          }}>
+        <Highlight component="span" highlight={["Jiwon Choi"]} style={{ fontStyle: "italic" }}>
           {author}
         </Highlight>
       </Anchor>
       {index < authorNames.length - 1 && (
-        <Text component="span">
+        <Text component="span" style={{ fontStyle: "italic" }}>
           {index === authorNames.length - 2
             ? authorNames.length === 2
               ? " and "
@@ -102,9 +100,9 @@ function PubButton({
 }) {
   return (
     <Anchor component={NextLink} href={href}>
-      <Flex component={Center} gap={4} style={{ fontSize: "xs" }}>
-        <Icon />
-        {children}
+      <Flex component={Center} gap={4}>
+        <Icon size={12} />
+        <Text size="sm">{children}</Text>
       </Flex>
     </Anchor>
   );
@@ -112,7 +110,7 @@ function PubButton({
 
 function PubLinks({ pub }: { pub: PubLinks }) {
   return (
-    <Flex gap={8}>
+    <Flex gap={12}>
       {pub.pdfLink && (
         <PubButton href={pub.pdfLink} icon={FaFilePdf}>
           PDF

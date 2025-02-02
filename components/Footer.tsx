@@ -1,7 +1,7 @@
 "use client";
 
 import { i18n } from "@/i18n-config";
-import { subText } from "@/styles/defined.css";
+import { textFooter } from "@/styles/defined.css";
 import { Button, Center, Flex, Select, Text, useMantineColorScheme } from "@mantine/core";
 import { useRouter } from "next/navigation";
 import { FaMoon, FaSun } from "react-icons/fa6";
@@ -32,7 +32,7 @@ export default function Footer({ locale }: { locale: Locale }) {
           {colorScheme === "light" ? "Light" : "Dark"}
         </Button>
       </Flex>
-      <Text className={subText}>Copyright © 2025 Jiwon Jason Choi. All Rights Reserved.</Text>
+      <Text className={textFooter}>Copyright © 2025 Jiwon Jason Choi. All Rights Reserved.</Text>
     </Flex>
   );
 }

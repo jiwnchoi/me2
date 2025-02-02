@@ -1,4 +1,4 @@
-import { emText, SectionStyle } from "@/styles/defined.css";
+import { SectionStyle, textEmphasize } from "@/styles/defined.css";
 
 import { getLocaleContent } from "@/utils";
 import { ActionIcon, ActionIconGroup, Box, Flex, Image, Text } from "@mantine/core";
@@ -35,7 +35,7 @@ export default async function Profile({ locale }: ProfileProps) {
         />
       </Box>
       <Flex mb={"sm"} direction="column" align="center">
-        <Text className={emText}>{profile.name}</Text>
+        <Text className={textEmphasize}>{profile.name}</Text>
         <Text>{profile.description}</Text>
       </Flex>
 

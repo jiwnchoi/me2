@@ -1,3 +1,4 @@
+import { textEm, textSub } from "@/styles/defined.css";
 import { Anchor, Box, Flex, Highlight, Image, Text } from "@mantine/core";
 import NextImage from "next/image";
 import type { FC } from "react";
@@ -30,6 +31,7 @@ export default function Item({
           <Flex>
             <Image
               p={4}
+              mt={6}
               bg={"white"}
               width={64}
               height={64}
@@ -51,12 +53,31 @@ export default function Item({
           </Flex>
         )}
         <Flex direction="column">
-          <Text component="span">
-            {href ? <Anchor href={href}>{title}</Anchor> : title}
-            {location && `, ${location}`}
+          <Text component="p">
+            {href ? (
+              <Anchor href={href} className={textEm} p={0}>
+                {title}
+              </Anchor>
+            ) : (
+              <Text component="span" className={textEm}>
+                {title}
+              </Text>
+            )}
+            {location && <Text component="span" className={textSub}>{`, ${location}`}</Text>}
           </Text>
-          {subtitle && <Text>{subtitle}</Text>}
-          {typeof Description === "function" ? <Description /> : <Text>{Description}</Text>}
+          {subtitle && (
+            <Text component="p" fs="italic">
+              {subtitle}
+            </Text>
+          )}
+
+          {typeof Description === "function" ? (
+            <Description />
+          ) : (
+            <Text component="p" className={textSub}>
+              {Description}
+            </Text>
+          )}
         </Flex>
         <Box flex={1} />
         {date && (
